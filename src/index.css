@@ -1,0 +1,14 @@
+*,:before,:after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Open Sans',sans-serif;
+}
+#root {
+  display: flex;
+  height: 100vh;
+}
+h1 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}

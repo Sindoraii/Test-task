@@ -1,0 +1,17 @@
+.MainLayout {
+    display: flex;
+}
+.MainLayout_firstSlot {
+    padding-top: 35.17px;
+    padding-left: 21px;
+    padding-right: 25px;
+    flex-basis: 150px;
+    background-color: #BDBDBD;
+}
+.MainLayout_secondSlot {
+    display: flex;
+    flex-direction: column;
+    width: 515px;
+    padding: 19px 41px 16px 36px;
+}
+
