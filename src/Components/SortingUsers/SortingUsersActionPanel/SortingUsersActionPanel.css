@@ -1,0 +1,11 @@
+.SortingUsersActionPanel__name {
+    line-height: 14px;
+}
+.SortingUsersActionPanel__button {
+    background-color: #4B51EF;
+    color: #FFFFFF;
+    padding: 5.02px 15.2px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10.5px;
+}

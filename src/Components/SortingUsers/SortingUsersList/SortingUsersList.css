@@ -1,0 +1,24 @@
+._content-SortingUsersList {
+    display: flex;
+    flex-direction: column;
+    max-width: 513px;
+    height: 100%;
+    padding: 19px 59px 25px 34px;
+}
+._content-SortingUsersList > h1 {
+    padding-bottom: 7px;
+}
+.SortingUsersList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+
+
+}
+.User-counter {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: auto;
+}
