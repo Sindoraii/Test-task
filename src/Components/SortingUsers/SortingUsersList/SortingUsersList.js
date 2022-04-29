@@ -5,7 +5,6 @@ import {SortingUsersCard} from "./SortingUsersCard/SortingUsersCard";
 export function SortingUsersList(props){
     const users = props.users;
     return (
-
         <div className='_content-SortingUsersList'>
             <h1  >Список пользователей</h1>
             <section className='SortingUsersList'>
@@ -20,8 +19,7 @@ export function SortingUsersList(props){
                 <SortingUsersCard user={users[8]}/>
                 <SortingUsersCard user={users[9]}/>
             </section>
-            <p className='User-counter'>Найдено 10 пользователей</p>
+            <p className='User-counter'>Найдено {users.length} пользователей</p>
         </div>
-
     );
 }

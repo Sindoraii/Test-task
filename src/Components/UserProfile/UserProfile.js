@@ -20,6 +20,5 @@ export function UserProfile() {
                 users =  {DataSource()[0]}
                 />}
                 />
-
     );
 }
