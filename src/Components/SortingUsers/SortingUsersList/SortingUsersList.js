@@ -4,6 +4,7 @@ import {SortingUsersCard} from "./SortingUsersCard/SortingUsersCard";
 
 export function SortingUsersList(props){
     const users = props.users;
+    console.log('LIST',users)
     return (
         <div className='_content-SortingUsersList'>
             <h1  >Список пользователей</h1>
