@@ -6,13 +6,8 @@
   font-family: Roboto,sans-serif;
   font-size: 10px;
 }
-body {
-  overflow: hidden;
-  cursor: default;
-}
 #root {
   display: flex;
-  height: 100vh;
 }
 h1 {
   font-size: 14px;
