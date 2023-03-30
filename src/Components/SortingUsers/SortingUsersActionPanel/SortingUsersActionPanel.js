@@ -1,9 +1,7 @@
 import React from "react";
 import "./SortingUsersActionPanel.css"
 
-export function SortingUsersActionPanel(props){
- const {handlerSortByCity,handlerSortByCompany} = props;
-
+export function SortingUsersActionPanel({handlerSortByCity,handlerSortByCompany}){
     return(
         <section className='SortingUsersActionPanel'>
             <h2 className='SortingUsersActionPanel__name'>Сортировка</h2>

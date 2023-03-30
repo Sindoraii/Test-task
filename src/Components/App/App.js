@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState} from "react";
 import {SortingUsers} from "../SortingUsers/SortingUsers";
 import {DataSource} from "../DataSource/DataSource";
 export function App() {
     const [users, setUsers] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
-    console.log(users)
     useEffect(() => {
         (async function fetchData() {
             setIsLoading(true);

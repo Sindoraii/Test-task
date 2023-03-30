@@ -2,11 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import "./SortingUsersCard.css"
 
-export function SortingUsersCard(props) {
-    const {user} = props;
-    console.log('CARD', user);
-
-
+export function SortingUsersCard({user}) {
     return(
         <article className='SortingUsersCard'>
             <p className='SortingUsersCard__field'>ФИО:
