@@ -2,35 +2,28 @@ import './UserProfileForm.css';
 import {useState} from "react";
 import {startValidation} from "./UserProfileFormValidation";
 
-export function UserProfileForm(props) {
-    const {stateProfile,users} = props;
-    let copyUsers = {...users};
-    // const company = {
-    //     bs:copyUsers.company.bs,
-    //     catchPhrase: copyUsers.company.catchPhrase,
-    //     name: copyUsers.company.name
-    // }
- const [comment,setComment] = useState({comment: ''});
+export function UserProfileForm({stateProfile, user}) {
+    const copyUser = JSON.parse(JSON.stringify(user));
+    const [comment, setComment] = useState({comment: ''});
 
     /* state for user`s data */
-    const [userData,setUserData] = useState({
-        email: copyUsers.email,
-        id: copyUsers.id,
-        name: copyUsers.name,
-        phone: copyUsers.phone,
-        username: copyUsers.username,
-        website: copyUsers.website
+    const [userData, setUserData] = useState({
+        email: copyUser.email,
+        id: copyUser.id,
+        name: copyUser.name,
+        phone: copyUser.phone,
+        username: copyUser.username,
+        website: copyUser.website
     });
-
     /* state for data of address */
     const [addressData, setAddressData] = useState({
-        city: copyUsers.address.city,
-        geo: {lat: copyUsers.address.geo.lat,
-              lng: copyUsers.address.geo.lng
+        city: copyUser.address.city,
+        geo: {lat: copyUser.address.geo.lat,
+              lng: copyUser.address.geo.lng
         },
-        street:copyUsers.address.street,
-        suite: copyUsers.address.suite,
-        zipcode: copyUsers.address.zipcode
+        street:copyUser.address.street,
+        suite: copyUser.address.suite,
+        zipcode: copyUser.address.zipcode
     })
 
     const [errors, setErrors] = useState([]);
@@ -84,7 +77,7 @@ export function UserProfileForm(props) {
                     ...comment
                 }
                 let sendingObj = JSON.stringify(output);
-                console.log(sendingObj);
+                console.log('OUTPUT DATA',sendingObj);
             }
     }
 

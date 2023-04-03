@@ -15,7 +15,7 @@ export function SortingUsersCard({user}) {
                 <span className='SortingUsersCard__value'>{user.company.name}</span>
             </p>
             <div className='SortingUsersCard__fullInfo'>
-                <Link to="/profile">Подробнее</Link>
+                <Link to={'/profile'} state={{user:user}} >Подробнее</Link>
             </div>
         </article>
     );

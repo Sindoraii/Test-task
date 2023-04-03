@@ -1,12 +1,13 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import {MainLayout} from "../Common/MainLayout/MainLayout";
 import {UserProfileActionPanel} from "./UserProfileActionPanel/UserProfileActionPanel";
-import {DataSource} from "../DataSource/DataSource";
 import {UserProfileForm} from "./UserProfileForm/UserProfileForm";
-
+import {useLocation} from "react-router-dom";
 
 export function UserProfile() {
     const [readonly,setReadonly] = useState(true);
+    const location = useLocation();
+    const {user} = location.state;
 
     function handleValueProfile () {
         return setReadonly(false);
@@ -17,7 +18,7 @@ export function UserProfile() {
             firstSlot ={<UserProfileActionPanel valueProfile = {handleValueProfile} />}
             secondSlot = {<UserProfileForm
                 stateProfile={readonly}
-                users =  {DataSource()[0]}
+                user = {user}
                 />}
                 />
     );

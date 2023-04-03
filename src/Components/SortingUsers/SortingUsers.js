@@ -27,7 +27,6 @@ export function SortingUsers({users}) {
                                              handlerSortByCompany={() => getUsersSorted('company')}
                     />}
                 secondSlot={<SortingUsersList/>}
-            />}
             />
         </UsersContext.Provider>
         );
