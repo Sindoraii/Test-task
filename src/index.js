@@ -10,7 +10,7 @@ root.render(
     <BrowserRouter>
         <Routes>
             <Route path="/Test-task" element={<App/>} />
-            <Route path = "/Test-task/profile" element = {<UserProfile/>} />
+            <Route path = "/profile" element = {<UserProfile/>} />
             <Route path="*" element = {
                 <div>Страница не найдена</div>
             }/>
