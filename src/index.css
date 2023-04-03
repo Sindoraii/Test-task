@@ -1,0 +1,24 @@
+*,*:before,*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border:0;
+  font-family: Roboto,sans-serif;
+  font-size: 10px;
+}
+#root {
+  display: flex;
+  min-height: 100vh;
+}
+h1 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+h2 {
+  font-size: 12px;
+  font-weight: 400;
+}
+label {
+  font-size: 8px;
+}

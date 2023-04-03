@@ -1,0 +1,41 @@
+.UserProfileForm_form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 6px 19px 12px;
+    border: 1px solid #F3F3F3;
+}
+.UserProfileForm_form > label {
+    display: flex;
+    flex-direction: column;
+}
+.UserProfileForm_button {
+    align-self: flex-end;
+    padding: 8px 16px;
+    font-size: 12px;
+    margin-top:10px;
+    color: #FFFFFF;
+    background-color: #52CF4F;
+    border-radius: 5px;
+    border: 0;
+}
+.UserProfileForm_button__disabled {
+    color: #FFFFFF;
+    background-color: #AFAFAF;
+}
+.UserProfileForm_input {
+    padding: 5.15px 10px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    font-size: 10px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    width: 211px;
+}
+.UserProfileForm_form > label:last-child > input {
+    margin-bottom: 0;
+    width: auto;
+    flex-basis: 55px;
+}
+.UserProfileForm_input--error  {
+    border: 1px solid #D91313;
+}
