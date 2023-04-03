@@ -1,5 +1,5 @@
 # Test-task
-Test task has done with React. 
+Test task has done with React.  
 Deploy: https://sindoraii.github.io/Test-task/  
 Main goals:  
 * Dedicate the app on components which we can reuse     
